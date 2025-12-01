@@ -4,92 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/font-awesome.css">
+
     <title>MAGINTEC</title>
 </head>
-<body class="text-center">
+<body class="text-center bg-black">
   <header class="mb-10">
     <h1 class="text-5xl font-extrabold text-green-700">MAGINTEC</h1>
-    <p class="text-lg mt-2 text-center w-full">(web consulting & more)</p>
+     <p class="text-lg mt-2 text-center w-full">(web consulting & more)</p>
   </header>
   <nav class="mt-8">
     <ul class="flex justify-center space-x-10 text-lg font-semibold">
       <li class="text-green-600">Hommes</li>
       <li class="text-green-600">Véhicules</li>
       <li class="text-green-600">Conditions</li>
-      <li class="text white-600">Contact
+      <li class="text-gray-600">Contact
       </li>
     </ul>
   </nav>
 <section class="mt-12 text-center">
-  <img src="IMAGE/1763662292207.jpg" alt="Image voiture sport" class="w-full h-72 object-cover rounded-lg">
-  <h2 class="text-3xl font-bold text-blackmt-6">
+  <img src="IMAGE/1763662292207.jpg" alt="Image voiture sport" class="w-full object-contain rounded-lg">
+  <h2 class="text-3xl font-bold text-white mt-">
     Location des voitures du sport
   </h2>
   <p class="text-green-500 text-lg mt-2">
     Réservation par email : info.magintec@gmail.com
   </p>
 </Section>
+
 <section class="grid grid-cols-2 gap-6 mt-12">
-  <div class="w-full bg-green-100 p-6 rounded-xl flex-col gap-4">
-    <label class="text-gray-700 font-semibold">
-      Nom<span class="text-red-500">*</span>
-    </label>
-    <input 
-      class="mt-2 w-full border border-gray-400 rounded-lg p-2"
-    />
-    <label class="text-gray-500 font-semibold">
-      E-mail<span class="text-red-500">*</span>
-    </label>
-    <input 
-      class="mt-2 w-full border border-gray-400 rounded-lg p-2"
-    />
-    <label class="text-gray-500 font-semibold">
-      Numéro de téléphone<span class="text-red-500">*</span>
-    </label>
-    <input 
-      class="mt-2 w-full border border-gray-400 rounded-lg p-2"
-    />
-    <label class="text-gray-500 font-semibold">
-      Message<span class="text-red-500">*</span>
-    </label>
-    <input class="mt-2 w-full border border-gray-400 rounded-lg p-6"> 
 
-   <button
-      class="px-2 py-2 bg-green-600 text-white rounded-md text-sm hover:bg-green-400">
+  <div class="w-full bg-black p-6 rounded-xl flex-col gap-4 border-2 border-green-500">
+    <h2 class="text-white font-semibold flex justufy-left text-lg border-b-2 border-white pb-1 mb-4 ">
+      Envoyer par email
+    </h2>
+    <label class="text-white font-semibold flex justify-left">
+      Nom <span class="text-red-500 ml-1">*</span>
+    </label>
+    <input 
+      class="mt-1 border border-gray-400 rounded-lg p-3 
+             w-3/4 mx-auto block"
+    />
+    <label class="text-white font-semibold flex justify-left mt-3">
+      E-mail <span class="text-red-500 ml-1">*</span>
+    </label>
+    <input 
+      class="mt-1 border border-gray-400 rounded-lg p-3 
+             w-3/4 mx-auto block"
+    />
+    <label class="text-white font-semibold flex justify-left mt-3">
+      Numéro de téléphone <span class="text-red-500 ml-1">*</span>
+    </label>
+    <input 
+      class="mt-1 border border-gray-400 rounded-lg p-3 
+             w-3/4 mx-auto block"
+    />
+    <label class="text-white font-semibold flex justify-left mt-3">
+      Message <span class="text-red-500 ml-1">*</span>
+    </label>
+   <textarea 
+      class="mt-1 border border-gray-400 rounded-lg p-3 
+             w-11/12 mx-auto block h-40 bg-white">
+    </textarea>
+    <button
+      class="mt-4 w-32 border border-black text-black bg-white justufy-left py-2 mx-auto block hover:bg-gray-200"
+    >
       Envoyer
-    </button> 
-
+    </button>
   </div>
-  <div class="w-full bg-gray-200 p-6 rounded-xl flex flex-col gap-6"> 
+  <div class="w-full bg-gray-900 p-3 rounded-xl flex flex-col gap-6"> 
     <div class="backdrop-blur-sm inline-block p-1 rounded-lg">
     <div class="text-center">
       <div class="text-4xl text-green-200 mb-2">
        🏠
        </div>  
     </div>
-      <p class="text-sm gray-400 text-lg">Duarrefstross</p>
-      <p class="text-sm gray-500 text-lg">999 weiswampanch Luxembourg</p>
+      <p class="text-white text-lg">Duarrefstross</p>
+      <p class="text-white text-lg">999 weiswampanch Luxembourg</p>
 
     </div>
     <div class="backdrop-blur-sm inline-block p-1 rounded-lg">
       <div class="text-4xl text-green-200 mb-2">
        📞 
        </div>
-       <p class="text-sm gray-400 text-lg">Téléphone</p>
-       <p class="text-sm gray-500 text-lg">+352/691.105.854</p>
+       <p class="text-white text-lg">Téléphone</p>
+       <p class="text-white text-lg">+352/691.105.854</p>
     </div>
     <div class="backdrop-blur-sm inline-block p-1 rounded-lg">
       <div class="text-4xl text-green-200 mb-2">
        ✉️
        </div>
-       <p class="text-sm gray-400 text-lg">Contact par E-mail</p>
-       <p class="text-sm gray-500 text-lg">info@magintec.com</p>
-
+       <p class="text-white text-lg">Contact par E-mail</p>
+       <p class="text-white text-lg">info@magintec.com</p>
   </section>
-  <!-- FOOTER PRINCIPAL → CENTRÉ, LOIN DES CADRES -->
-<div class="w-full text-center mt-16 flex flex-col items-center gap-4">
-
-  <!-- Petite phrase floue -->
+  <div class="w-full text-center mt-16 flex flex-col items-center gap-4">
   <p class="text-gray-400 text-sm italic">
     COMMENT RESERVER UNE 
   </p>
@@ -114,14 +123,5 @@
     Magintec Sarl,Duarrefstross 2.9990 (Luxembourg) — Conditions générales de vente
   </p>
 </div>
-
-
-    
-  
-
-  
-
-
-  
 </body>
 </html>
