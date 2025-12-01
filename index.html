@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/font/fontawesome-free-5.15.3-web/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+  <body class="bg-white text-gray-800 antialiased">
+  <header class="border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 py-4">
+      <div class="flex items-center gap-6">
+        <div class="text-2xl font-semibold">zolden</div>
+        <nav class="hidden md:flex gap-6 text-sm text-gray-600">
+          <a href="#" class="hover:text-gray-900">Shop</a>
+          <a href="#" class="hover:text-gray-900">Women</a>
+          <a href="#" class="hover:text-gray-900">Men</a>
+          <a href="#" class="hover:text-gray-900">Sale</a>
+          <a href="#" class="hover:text-gray-900">Pages</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button class="hidden md:inline-block text-sm px-3 py-2 border rounded">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="text-sm px-3 py-2 flex items-center gap-3">
+          <i class="fas fa-balance-scale"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="md:hidden border-b">
+    <div class="max-w-7xl mx-auto px-4 flex gap-4 overflow-x-auto text-sm text-gray-600 py-3">
+      <a href="#" class="whitespace-nowrap">Shop</a>
+      <a href="#" class="whitespace-nowrap">Women</a>
+      <a href="#" class="whitespace-nowrap">Men</a>
+      <a href="#" class="whitespace-nowrap">Sale</a>
+      <a href="#" class="whitespace-nowrap">Pages</a>
+    </div>
+  </div>
+  <section class="hero-bg h-[520px] sm:h-[560px] md:h-[640px] relative bg-center bg-cover" style="background-image: url('images/maison.png');">
+    <div class="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+      <div class="bg-white/95 backdrop-blur-sm rounded-lg p-6 sm:p-10 shadow-lg max-w-xl text-center md:text-left">
+        <p class="text-xs uppercase text-gray-400 mb-2">New In</p>
+        <h1 class="text-3xl sm:text-4xl font-bold mb-4">Goodbye stereotypes.<br/>Hello Zerotypes.</h1>
+        <p class="text-gray-600 mb-6">Shop our new collection and embrace minimal, clean design.</p>
+        <a href="#" class="inline-block bg-gray-900 text-white px-5 py-3 rounded text-sm">Shop Now →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+      <div class="relative rounded-lg shadow overflow-hidden md:min-h-[460px] flex flex-col justify-end p-6 text-white bg-cover bg-center" style="background-image: url('images/enceinte.jpg');">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 flex flex-col gap-4">
+          <div>
+            <h3 class="text-2xl font-semibold">Accessories</h3>
+            <p class="mt-2 text-sm text-white/80">Everyone's talking about</p>
+          </div>
+          <a href="#" class="text-sm font-medium inline-flex items-center gap-2">Shop Now →</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6">
+        <div class="relative rounded-lg shadow overflow-hidden min-h-[260px] flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('images/femme.png');">
+          <div class="absolute inset-0 bg-black/30"></div>
+          <div class="relative z-10">
+            <h3 class="font-semibold text-lg">Woman</h3>
+            <p class="text-sm text-white/80">Elevated comfort</p>
+            <a href="#" class="text-sm font-medium mt-3 inline-flex items-center gap-2">Shop Now →</a>
+          </div>
+        </div>
+
+        <div class="relative rounded-lg shadow overflow-hidden min-h-[260px] flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('images/men.jpg');">
+          <div class="absolute inset-0 bg-black/30"></div>
+          <div class="relative z-10">
+            <h3 class="font-semibold text-lg">Man</h3>
+            <p class="text-sm text-white/80">Your wardrobe refresh</p>
+            <a href="#" class="text-sm font-medium mt-3 inline-flex items-center gap-2">Shop Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-sm text-gray-500 py-4 border-b">
+      <div class="flex flex-wrap gap-2">
+        <button class="px-4 py-2 border rounded text-gray-700">New Arrivals</button>
+        <button class="px-4 py-2 border rounded">Best Sellers</button>
+        <button class="px-4 py-2 border rounded">Final Stock Sale</button>
+      </div>
+      <div class="text-xs text-center sm:text-right w-full sm:w-auto">Showing 12 products</div>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Muscle Fit T-shirt</h4>
+          <p class="text-xs text-gray-500">$60.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Sweater with voluminous sleeves</h4>
+          <p class="text-xs text-gray-500">$60.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Tote Bag with chain</h4>
+          <p class="text-xs text-gray-500">$60.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Sweater with voluminous sleeves</h4>
+          <p class="text-xs text-gray-500">$90.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Reflective jacket</h4>
+          <p class="text-xs text-gray-500">$110.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Poplin shirt with belt</h4>
+          <p class="text-xs text-gray-500">$60.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Super high waist jeans</h4>
+          <p class="text-xs text-gray-500">$60.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">High waist denim shorts</h4>
+          <p class="text-xs text-gray-500 line-through">$60.00</p>
+          <p class="text-xs text-red-500">$30.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Linen-effect blazer</h4>
+          <p class="text-xs text-gray-500">$110.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Cateye sunglasses</h4>
+          <p class="text-xs text-gray-500 line-through">$60.00</p>
+          <p class="text-xs text-red-500">$30.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Faux leather biker jacket</h4>
+          <p class="text-xs text-gray-500">$250.00</p>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="aspect-[4/5] bg-gray-100">
+          <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+          <h4 class="text-sm font-medium">Puffer jacket</h4>
+          <p class="text-xs text-gray-500">$110.00</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+    <div class="bg-gray-50 rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
+      <div class="p-8 flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold mb-3">T-shirts for Everyone</h3>
+        <p class="text-gray-500 mb-6">Stock up on our best-selling T-shirts for everyone.</p>
+        <a href="#" class="inline-block text-sm px-4 py-2 border rounded">Shop Now →</a>
+      </div>
+      <div class="hidden md:block">
+        <img src="images/men.jpg" alt="banner" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-sm text-gray-600">
+      <div class="py-6 border rounded">
+        <div class="text-2xl mb-2">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div>Write to us at<br/><span class="text-xs text-gray-400">email@example.com</span></div>
+      </div>
+      <div class="py-6 border rounded">
+        <div class="text-2xl mb-2">
+          <i class="fas fa-lock"></i>
+        </div>
+        <div>Secure credit card payment</div>
+      </div>
+      <div class="py-6 border rounded">
+        <div class="text-2xl mb-2">
+          <i class="fas fa-truck"></i>
+        </div>
+        <div>Free delivery for orders over $250</div>
+      </div>
+      <div class="py-6 border rounded">
+        <div class="text-2xl mb-2">
+          <i class="fas fa-sync"></i>
+        </div>
+        <div>Return of goods from anywhere</div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="mt-12 border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-6 text-sm text-gray-600">
+      <div>
+        <h4 class="font-semibold mb-3">Customer service</h4>
+        <ul class="space-y-2">
+          <li>Need Help?</li>
+          <li>FAQ</li>
+          <li>Delivery</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Special services</h4>
+        <ul class="space-y-2">
+          <li>Free delivery for order over $250</li>
+          <li>Express delivery 24h</li>
+          <li>Expanded returns</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Follow us</h4>
+        <div class="flex gap-3">
+          <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">IG</div>
+          <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">FB</div>
+          <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">TW</div>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Newsletter</h4>
+        <form class="flex gap-2">
+          <input class="border px-2 py-2 rounded w-full text-sm" placeholder="Email address" />
+          <button class="bg-gray-900 text-white px-4 rounded">OK</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center text-xs py-6 text-gray-400">© 2025 Zolden. All rights reserved.</div>
+  </footer>
+  </body>
+</html>
