@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font/font/fontawesome-free-5.15.3-web/css/all.css">
+    <!-- CDN Tailwind CSS : framework CSS utilitaire pour le styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
+  <!-- Corps de la page avec styles de base : fond blanc, texte gris foncé, antialiasing pour un rendu lisse -->
   <body class="bg-white text-gray-800 antialiased">
+  <!-- En-tête principal du site avec bordure inférieure -->
   <header class="border-b">
+    <!-- Conteneur principal de l'en-tête : largeur max 7xl, centré, padding responsive -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 py-4">
+      <!-- Section gauche : logo et navigation principale -->
       <div class="flex items-center gap-6">
+        <!-- Logo de la marque "zolden" -->
         <div class="text-2xl font-semibold">zolden</div>
+        <!-- Navigation principale : cachée sur mobile (md:flex), visible sur tablette et desktop -->
         <nav class="hidden md:flex gap-6 text-sm text-gray-600">
           <a href="#" class="hover:text-gray-900">Shop</a>
           <a href="#" class="hover:text-gray-900">Women</a>
@@ -21,10 +28,13 @@
         </nav>
       </div>
 
+      <!-- Section droite : boutons d'action (recherche, favoris, panier) -->
       <div class="flex items-center gap-4">
+        <!-- Bouton de recherche : visible uniquement sur tablette et desktop -->
         <button class="hidden md:inline-block text-sm px-3 py-2 border rounded">
           <i class="fas fa-search"></i>
         </button>
+        <!-- Bouton avec icônes : balance (comparaison), cœur (favoris), panier -->
         <button class="text-sm px-3 py-2 flex items-center gap-3">
           <i class="fas fa-balance-scale"></i>
           <i class="fas fa-heart"></i>
@@ -33,7 +43,9 @@
       </div>
     </div>
   </header>
+  <!-- Navigation mobile : visible uniquement sur petits écrans (md:hidden), avec défilement horizontal -->
   <div class="md:hidden border-b">
+    <!-- Menu de navigation mobile avec défilement horizontal si nécessaire -->
     <div class="max-w-7xl mx-auto px-4 flex gap-4 overflow-x-auto text-sm text-gray-600 py-3">
       <a href="#" class="whitespace-nowrap">Shop</a>
       <a href="#" class="whitespace-nowrap">Women</a>
@@ -42,22 +54,34 @@
       <a href="#" class="whitespace-nowrap">Pages</a>
     </div>
   </div>
+  <!-- Section hero/bannière principale : hauteur responsive avec image de fond -->
   <section class="hero-bg h-[520px] sm:h-[560px] md:h-[640px] relative bg-center bg-cover" style="background-image: url('images/maison.png');">
+    <!-- Conteneur centré pour le contenu de la bannière -->
     <div class="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+      <!-- Carte de contenu avec fond blanc semi-transparent et effet de flou (backdrop-blur) -->
       <div class="bg-white/95 backdrop-blur-sm rounded-lg p-6 sm:p-10 shadow-lg max-w-xl text-center md:text-left">
+        <!-- Badge "New In" en haut -->
         <p class="text-xs uppercase text-gray-400 mb-2">New In</p>
+        <!-- Titre principal de la bannière -->
         <h1 class="text-3xl sm:text-4xl font-bold mb-4">Goodbye stereotypes.<br/>Hello Zerotypes.</h1>
+        <!-- Description du message marketing -->
         <p class="text-gray-600 mb-6">Shop our new collection and embrace minimal, clean design.</p>
+        <!-- Bouton d'action principal -->
         <a href="#" class="inline-block bg-gray-900 text-white px-5 py-3 rounded text-sm">Shop Now →</a>
       </div>
     </div>
   </section>
 
 
+  <!-- Section catégories : affichage des différentes catégories de produits (Accessories, Women, Men) -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <!-- Grille responsive : 1 colonne sur mobile, 2 colonnes sur tablette et plus -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+      <!-- Carte catégorie Accessories : grande carte à gauche avec image de fond -->
       <div class="relative rounded-lg shadow overflow-hidden md:min-h-[460px] flex flex-col justify-end p-6 text-white bg-cover bg-center" style="background-image: url('images/enceinte.jpg');">
+        <!-- Overlay sombre pour améliorer la lisibilité du texte sur l'image -->
         <div class="absolute inset-0 bg-black/30"></div>
+        <!-- Contenu de la carte positionné au-dessus de l'overlay -->
         <div class="relative z-10 flex flex-col gap-4">
           <div>
             <h3 class="text-2xl font-semibold">Accessories</h3>
@@ -67,7 +91,9 @@
         </div>
       </div>
 
+      <!-- Colonne droite : deux cartes empilées (Women et Men) -->
       <div class="grid grid-cols-1 gap-6">
+        <!-- Carte catégorie Women -->
         <div class="relative rounded-lg shadow overflow-hidden min-h-[260px] flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('images/femme.png');">
           <div class="absolute inset-0 bg-black/30"></div>
           <div class="relative z-10">
@@ -77,6 +103,7 @@
           </div>
         </div>
 
+        <!-- Carte catégorie Men -->
         <div class="relative rounded-lg shadow overflow-hidden min-h-[260px] flex flex-col justify-end p-4 text-white bg-cover bg-center" style="background-image: url('images/men.jpg');">
           <div class="absolute inset-0 bg-black/30"></div>
           <div class="relative z-10">
@@ -89,29 +116,39 @@
     </div>
   </section>
 
+  <!-- Barre de filtres et tri : boutons de catégorisation et compteur de produits -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <!-- Conteneur flexible : colonne sur mobile, ligne sur tablette et plus -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-sm text-gray-500 py-4 border-b">
+      <!-- Boutons de filtrage par catégorie -->
       <div class="flex flex-wrap gap-2">
         <button class="px-4 py-2 border rounded text-gray-700">New Arrivals</button>
         <button class="px-4 py-2 border rounded">Best Sellers</button>
         <button class="px-4 py-2 border rounded">Final Stock Sale</button>
       </div>
+      <!-- Compteur de produits affichés -->
       <div class="text-xs text-center sm:text-right w-full sm:w-auto">Showing 12 products</div>
     </div>
   </div>
 
+  <!-- Section principale : grille de produits -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <!-- Grille responsive de produits : 1 colonne mobile, 2 tablette, 3 desktop, 4 large desktop -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Carte produit 1 : Muscle Fit T-shirt -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <!-- Conteneur d'image avec ratio 4:5 (portrait) -->
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
         </div>
+        <!-- Informations du produit : nom et prix -->
         <div class="p-3">
           <h4 class="text-sm font-medium">Muscle Fit T-shirt</h4>
           <p class="text-xs text-gray-500">$60.00</p>
         </div>
       </article>
 
+      <!-- Carte produit 2 : Sweater with voluminous sleeves -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
@@ -122,6 +159,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 3 : Tote Bag with chain -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
@@ -132,6 +170,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 4 : Sweater with voluminous sleeves (prix différent) -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
@@ -142,6 +181,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 5 : Reflective jacket -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
@@ -152,6 +192,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 6 : Poplin shirt with belt -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
@@ -162,6 +203,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 7 : Super high waist jeans -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
@@ -172,17 +214,21 @@
         </div>
       </article>
 
+      <!-- Carte produit 8 : High waist denim shorts (en promotion : prix barré + prix réduit) -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
         </div>
         <div class="p-3">
           <h4 class="text-sm font-medium">High waist denim shorts</h4>
+          <!-- Prix original barré -->
           <p class="text-xs text-gray-500 line-through">$60.00</p>
+          <!-- Prix réduit en rouge -->
           <p class="text-xs text-red-500">$30.00</p>
         </div>
       </article>
 
+      <!-- Carte produit 9 : Linen-effect blazer -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
@@ -193,6 +239,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 10 : Cateye sunglasses (en promotion) -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/jupe bleu.png" alt="product" class="w-full h-full object-cover">
@@ -204,6 +251,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 11 : Faux leather biker jacket -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/femme.png" alt="product" class="w-full h-full object-cover">
@@ -214,6 +262,7 @@
         </div>
       </article>
 
+      <!-- Carte produit 12 : Puffer jacket -->
       <article class="bg-white rounded-lg shadow-sm overflow-hidden">
         <div class="aspect-[4/5] bg-gray-100">
           <img src="images/men.jpg" alt="product" class="w-full h-full object-cover">
@@ -226,39 +275,49 @@
     </div>
   </main>
 
+  <!-- Section bannière promotionnelle : T-shirts for Everyone -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+    <!-- Grille responsive : 1 colonne sur mobile, 2 colonnes sur tablette et plus -->
     <div class="bg-gray-50 rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
+      <!-- Contenu textuel de la bannière -->
       <div class="p-8 flex flex-col justify-center">
         <h3 class="text-2xl font-semibold mb-3">T-shirts for Everyone</h3>
         <p class="text-gray-500 mb-6">Stock up on our best-selling T-shirts for everyone.</p>
         <a href="#" class="inline-block text-sm px-4 py-2 border rounded">Shop Now →</a>
       </div>
+      <!-- Image de la bannière : visible uniquement sur tablette et desktop -->
       <div class="hidden md:block">
         <img src="images/men.jpg" alt="banner" class="w-full h-full object-cover">
       </div>
     </div>
   </section>
 
+  <!-- Section des avantages/services : grille de 4 cartes avec icônes -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+    <!-- Grille responsive : 2 colonnes sur mobile, 4 colonnes sur tablette et plus -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-sm text-gray-600">
+      <!-- Carte avantage 1 : Contact email -->
       <div class="py-6 border rounded">
         <div class="text-2xl mb-2">
           <i class="fas fa-envelope"></i>
         </div>
         <div>Write to us at<br/><span class="text-xs text-gray-400">email@example.com</span></div>
       </div>
+      <!-- Carte avantage 2 : Paiement sécurisé -->
       <div class="py-6 border rounded">
         <div class="text-2xl mb-2">
           <i class="fas fa-lock"></i>
         </div>
         <div>Secure credit card payment</div>
       </div>
+      <!-- Carte avantage 3 : Livraison gratuite -->
       <div class="py-6 border rounded">
         <div class="text-2xl mb-2">
           <i class="fas fa-truck"></i>
         </div>
         <div>Free delivery for orders over $250</div>
       </div>
+      <!-- Carte avantage 4 : Retours faciles -->
       <div class="py-6 border rounded">
         <div class="text-2xl mb-2">
           <i class="fas fa-sync"></i>
@@ -269,8 +328,11 @@
   </section>
 
 
+  <!-- Pied de page : informations du site, liens, newsletter -->
   <footer class="mt-12 border-t">
+    <!-- Grille responsive du footer : 1 colonne sur mobile, 4 colonnes sur tablette et plus -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-6 text-sm text-gray-600">
+      <!-- Colonne 1 : Service client -->
       <div>
         <h4 class="font-semibold mb-3">Customer service</h4>
         <ul class="space-y-2">
@@ -280,6 +342,7 @@
           <li>Contact us</li>
         </ul>
       </div>
+      <!-- Colonne 2 : Services spéciaux -->
       <div>
         <h4 class="font-semibold mb-3">Special services</h4>
         <ul class="space-y-2">
@@ -288,22 +351,29 @@
           <li>Expanded returns</li>
         </ul>
       </div>
+      <!-- Colonne 3 : Réseaux sociaux -->
       <div>
         <h4 class="font-semibold mb-3">Follow us</h4>
         <div class="flex gap-3">
+          <!-- Bouton Instagram -->
           <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">IG</div>
+          <!-- Bouton Facebook -->
           <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">FB</div>
+          <!-- Bouton Twitter -->
           <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">TW</div>
         </div>
       </div>
+      <!-- Colonne 4 : Newsletter -->
       <div>
         <h4 class="font-semibold mb-3">Newsletter</h4>
+        <!-- Formulaire d'inscription à la newsletter -->
         <form class="flex gap-2">
           <input class="border px-2 py-2 rounded w-full text-sm" placeholder="Email address" />
           <button class="bg-gray-900 text-white px-4 rounded">OK</button>
         </form>
       </div>
     </div>
+    <!-- Copyright : droits d'auteur -->
     <div class="text-center text-xs py-6 text-gray-400">© 2025 Zolden. All rights reserved.</div>
   </footer>
   </body>
